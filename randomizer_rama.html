@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirección aleatoria</title>
+</head>
+<body>
+  <p>Por favor, haga clic en el botón para ir a una página aleatoria.</p>
+
+  <button id="redireccionar">Redireccionar</button>
+
+  <script>
+    // Lista de URLs disponibles
+    var urls = [
+      'https://facebook.com',
+    ];
+
+    // Función para redirigir a una URL aleatoria
+    function redirigirAleatoriamente() {
+      var randomIndex = Math.floor(Math.random() * urls.length);
+      window.location.href = urls[randomIndex];
+    }
+
+    // Agregar un controlador de eventos al botón
+    document.getElementById("redireccionar").addEventListener("click", redirigirAleatoriamente);
+  </script>
+</body>
+</html>
