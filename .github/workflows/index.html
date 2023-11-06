@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Discord Link</title>
+</head>
+<body>
+   <h1>Discord Link</h1>
+   <form action="/start_bot" method="post">
+       <input type="submit" value="Conseguir Link">
+   </form>
+   {% if invite_url %}
+       <p>Enlace de Invitación: <a href="{{ invite_url }}" target="_blank">{{ invite_url }}</a></p>
+   {% endif %}
+</body>
+</html>
